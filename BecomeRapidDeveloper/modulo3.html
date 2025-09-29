@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Módulo 3 · Become a Rapid Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header mínimo -->
+  <nav class="bg-light border-bottom">
+    <div class="container py-2 d-flex align-items-center gap-3">
+      <a href="index.html" class="btn btn-outline-secondary btn-sm">← Volver</a>
+      <strong>Módulo 3 · La siguiente fase: construir tu app</strong>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <main class="py-4">
+    <div class="container">
+      <p class="mb-2"><strong>Objetivo:</strong> entrar en la fase <em>Develop</em>: planificar tareas a partir de historias de usuario, conocer Studio Pro, estructurar páginas con grids, crear botones, páginas y entender errores.</p>
+
+      <h2 class="h5 mt-3">Planificación</h2>
+      <ul class="mb-3">
+        <li>Prioriza historias por valor de negocio.</li>
+        <li>Desglosa la historia en tareas concretas (home, botones, páginas, enlaces).</li>
+      </ul>
+
+      <h2 class="h5">Explorar Mendix Studio Pro</h2>
+      <ul class="mb-3">
+        <li>Barra superior: menús (File, Edit, View, App, Run, Version Control, Language, Help) y acciones (Run, Stop, Publish, View App, Marketplace, etc.).</li>
+        <li>Panel izquierdo: App Explorer y Page Explorer.</li>
+        <li>Editor central: modo Diseño (WYSIWYG) y Estructura.</li>
+        <li>Panel derecho: Toolbox (widgets) y Properties.</li>
+        <li>Panel inferior: Changes, Errors y Best Practice Bot.</li>
+      </ul>
+
+      <h2 class="h5">Columnas y filas (estructura de página)</h2>
+      <ul class="mb-3">
+        <li><strong>Widgets:</strong> todo lo que arrastras desde el Toolbox (botones, grids, contenedores).</li>
+        <li><strong>Layout Grid:</strong> filas y columnas; opciones de tamaño Auto-Fit, Auto-Fill o Manual (hasta 12 columnas por fila).</li>
+        <li><strong>Responsive:</strong> la misma página se adapta a desktop/tablet/móvil; puedes ajustar por dispositivo.</li>
+        <li><strong>Contenedores:</strong> permiten agrupar, mover, ocultar, alinear y estilizar varios widgets a la vez.</li>
+      </ul>
+
+      <h2 class="h5">Botones</h2>
+      <ul class="mb-3">
+        <li>Todos son <em>Action Button</em>; cambian por la acción de <em>On click</em> (abrir página, borrar, etc.).</li>
+        <li>Empieza con un botón básico (hacer nada) y configura la acción después.</li>
+      </ul>
+
+      <h2 class="h5">Páginas</h2>
+      <ul class="mb-3">
+        <li>Crear páginas para datos raíz (Cursos, Sedes, Profesores, Alumnos) y enlazarlas desde la home.</li>
+        <li><strong>Nombre:</strong> Capitalización por palabra, separadas por guion bajo (ej. <code>Course_Overview</code>).</li>
+        <li><strong>Layout de navegación:</strong> consistente (ej. <em>Atlas_Default</em>).</li>
+        <li><strong>Plantilla:</strong> usa templates de Atlas/UX para velocidad y consistencia.</li>
+      </ul>
+
+      <h2 class="h5">Errores</h2>
+      <ul class="mb-3">
+        <li>Los errores aparecen en tiempo real y bloquean la ejecución hasta corregirlos.</li>
+        <li>Haz doble clic en el error para ir al elemento afectado.</li>
+        <li>Ejemplo: listas sin entidad de datos configurada (se verá en el siguiente módulo).</li>
+        <li>No olvides <strong>commit</strong> al Team Server para compartir cambios.</li>
+      </ul>
+
+      <!-- Chequeo de conocimiento -->
+      <section class="mt-4" aria-label="Chequeo de conocimiento del módulo">
+        <h2 class="h5">Chequeo de conocimiento</h2>
+        <p class="text-muted mb-3">Preguntas del módulo 3.</p>
+
+        <div class="accordion" id="kcModulo3">
+          <!-- Pregunta 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kc3-q1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#kc3-a1" aria-expanded="true" aria-controls="kc3-a1">
+                Pregunta 1 · Una página es “responsive” cuando:
+              </button>
+            </h2>
+            <div id="kc3-a1" class="accordion-collapse collapse show" aria-labelledby="kc3-q1" data-bs-parent="#kcModulo3">
+              <div class="accordion-body">
+                <p class="mb-1"><strong>Respuesta:</strong> Funciona y se ve bien en todos los dispositivos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kc3-q2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kc3-a2" aria-expanded="false" aria-controls="kc3-a2">
+                Pregunta 2 · ¿Cuántas filas puede tener una página?
+              </button>
+            </h2>
+            <div id="kc3-a2" class="accordion-collapse collapse" aria-labelledby="kc3-q2" data-bs-parent="#kcModulo3">
+              <div class="accordion-body">
+                <p class="mb-1"><strong>Respuesta:</strong> Tantas como necesites.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kc3-q3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kc3-a3" aria-expanded="false" aria-controls="kc3-a3">
+                Pregunta 3 · Es posible colocar múltiples widgets dentro de un contenedor.
+              </button>
+            </h2>
+            <div id="kc3-a3" class="accordion-collapse collapse" aria-labelledby="kc3-q3" data-bs-parent="#kcModulo3">
+              <div class="accordion-body">
+                <p class="mb-1"><strong>Respuesta:</strong> Verdadero.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kc3-q4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kc3-a4" aria-expanded="false" aria-controls="kc3-a4">
+                Pregunta 4 · Descargaste la última versión del proyecto desde Team Server y realizaste cambios. ¿Qué debes hacer para que tu equipo vea tus cambios?
+              </button>
+            </h2>
+            <div id="kc3-a4" class="accordion-collapse collapse" aria-labelledby="kc3-q4" data-bs-parent="#kcModulo3">
+              <div class="accordion-body">
+                <p class="mb-1"><strong>Respuesta:</strong> Hacer <em>commit</em> de la app al Team Server.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="small text-muted mb-0 mt-4">Scribd +3.</p>
+    </div>
+  </main>
+
+  <!-- Footer mínimo -->
+  <footer class="py-3 border-top">
+    <div class="container d-flex justify-content-between">
+      <small class="text-muted">© 2025 Become a Rapid Developer (no oficial).</small>
+      <a class="link-secondary" href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
